@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+}
+
+body {
+    background-color: #FCF9F4;
+    overflow-x: hidden;
+}
+.header   {
+    background-color: #FCF9F4;
+    height: 100px;
+    width: 100%;
+display: flex; 
+align-items: center;
+justify-content: space-evenly;
+gap: 10px; 
+ position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+h1 i{
+    margin-right: 10px;
+    margin-left: 20px;
+    color: #3B5C4B;  
+        font-size:2.5rem ;
+ 
+}
+.stay {
+    color: #3B5C4B;
+    font-size:3rem ;
+}
+
+.hub {
+    color: #F2B544;
+        font-size:3rem ;
+
+}
+.header-content {
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;   
+}
+.header-content a{
+        color: #3B5C4B;
+        text-decoration: none;
+        font-size: 22px;
+        
+
+}
+.header-content a:hover{
+    text-decoration:underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: #3B5C4B;
+    text-underline-offset: 15px;
+    font-weight: bold;
+    
+    
+}
+.sign-in{
+    font-size: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px; 
+    
+}
+ .sign-in button{
+    padding: 15px;
+    width: 100px;
+    background-color: white;
+    font-size: 18px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+      
+ }
+ .sign-in button a{
+     text-decoration: none;
+     color: black;
+ }
+ .sign-in button:hover{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+    font-weight: 900px;
+    background-color:#C8DEC9;
+    color:#C8DEC9 ;
+ }
+ .sign-in button:nth-child(2){
+    background-color: #F2B544;
+    width: 150px;
+    animation-name: jump;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    font-size: 18px;
+ }
+ @keyframes jump{
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-10px);
+       
+    }
+    70%{
+        transform: translateY(10px);
+    }
+    60%{
+        transform: skewy(5deg);
+    }
+    90%{
+        transform: skewy(-5deg);
+    }
+ }
+ /* SIGN CONTENT */
+
+ .sign-box{
+    height: 600px;
+    width: 35%;
+    margin-top: 8% ;
+    margin-left: 25%;
+    background-color: #FCF9F4;
+    box-shadow: 10px 10px 20px ;
+    border-radius: 20px;
+    color: #3B5C4B; 
+ }
+ .sign-box h2{
+    padding-left: 10%;
+    padding-top: 6%;
+    font-size: 45px;
+ }
+ .sign-box p{
+    padding-left: 10%;
+    padding-top: 2%;
+    line-height: 1.5;
+    font-size: 20px;
+    padding-bottom: 5%;
+ }
+ .input-box{
+    position: relative;
+ }
+ .input-box input{
+width: 80%;
+text-indent: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    color: #3B5C4B;
+    border-radius: 10px;
+    border: 2px solid#3B5C4B;
+ }
+ .input-box i {
+    position: absolute;
+    left: 12%;
+    top: 10px;
+    color: #668078;
+    font-size: 24px;
+}
+.sign-box a{
+   display: block;
+    text-align: right;
+    padding-right: 10%;
+    
+}
+.sign-box button{
+    padding: 10px;
+    background-color: #3B5C4B;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+        border-radius: 10px;
+
+}
+.or {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.or span {
+    flex: 1;
+    height: 1px;
+    background-color: #3B5C4B;
+}
+
+.or p {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    font-size: 15px;
+    color: #668078;
+}
+.continue {
+    text-align: center;
+    padding: 0 !important;
+    color: #668078;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-login button {
+    width: 33%;
+    padding: 10px;
+    background-color: white;
+    color: #3B5C4B;
+    border: 1px solid #3B5C4B;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 0;
+}
+
+.social-login i {
+    margin-right: 8px;
+}
+
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* TABLET / SMALL LAPTOP */
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    .header {
+        height: 90px;
+        gap: 10px;
+    }
+
+    h1 i {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    .stay,
+    .hub {
+        font-size: 2.3rem;
+    }
+
+    .header-content {
+        gap: 15px;
+    }
+
+    .header-content a {
+        font-size: 17px;
+    }
+
+    .sign-in {
+        gap: 10px;
+    }
+
+    .sign-in button {
+        width: 85px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .sign-in button:nth-child(2) {
+        width: 120px;
+        font-size: 15px;
+    }
+
+
+    /* SIGN BOX */
+    .sign-box {
+        width: 50%;
+        height: auto;
+        min-height: 600px;
+        margin-top: 12%;
+        margin-left: 25%;
+    }
+
+    .sign-box h2 {
+        font-size: 40px;
+    }
+
+    .input-box input {
+        width: 80%;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        height: auto;
+        min-height: 80px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    h1 i {
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+
+    .stay,
+    .hub {
+        font-size: 2rem;
+    }
+
+    .header-content {
+        order: 3;
+        width: 100%;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-content a {
+        font-size: 15px;
+    }
+
+    .sign-in {
+        gap: 8px;
+    }
+
+    .sign-in button {
+        width: 75px;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .sign-in button:nth-child(2) {
+        width: 105px;
+        font-size: 13px;
+    }
+
+
+    /* SIGN BOX */
+    .sign-box {
+        width: 85%;
+        height: auto;
+        min-height: 600px;
+        margin-top: 150px;
+        margin-left: 7.5%;
+        margin-bottom: 30px;
+    }
+
+    .sign-box h2 {
+        padding-left: 8%;
+        padding-top: 7%;
+        font-size: 35px;
+    }
+
+    .sign-box p {
+        padding-left: 8%;
+        padding-right: 8%;
+        font-size: 18px;
+    }
+
+    .input-box input {
+        width: 84%;
+        margin-left: 8%;
+        padding: 14px;
+    }
+
+    .input-box i {
+        left: 10%;
+        font-size: 22px;
+    }
+
+    .sign-box a {
+        padding-right: 8%;
+    }
+
+    .sign-box button {
+        width: 84%;
+        margin-left: 8%;
+    }
+
+    .or {
+        width: 84%;
+    }
+
+    .social-login {
+        width: 84%;
+        margin: auto;
+    }
+
+    .social-login button {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+    .header {
+        padding: 8px 5px;
+    }
+
+    h1 i {
+        font-size: 1.5rem;
+    }
+
+    .stay,
+    .hub {
+        font-size: 1.7rem;
+    }
+
+    .header-content {
+        gap: 10px;
+    }
+
+    .header-content a {
+        font-size: 12px;
+    }
+
+    .sign-in button {
+        width: 65px;
+        padding: 7px;
+        font-size: 11px;
+    }
+
+    .sign-in button:nth-child(2) {
+        width: 90px;
+        font-size: 11px;
+    }
+
+
+    /* SIGN BOX */
+    .sign-box {
+        width: 92%;
+        margin-left: 4%;
+        margin-top: 145px;
+        min-height: 580px;
+        border-radius: 15px;
+    }
+
+    .sign-box h2 {
+        font-size: 30px;
+    }
+
+    .sign-box p {
+        font-size: 16px;
+    }
+
+    .input-box input {
+        width: 86%;
+        margin-left: 7%;
+        padding: 13px;
+    }
+
+    .input-box i {
+        left: 9%;
+        font-size: 20px;
+    }
+
+    .sign-box a {
+        padding-right: 7%;
+        font-size: 14px;
+    }
+
+    .sign-box button {
+        width: 86%;
+        margin-left: 7%;
+    }
+
+    .or {
+        width: 86%;
+        gap: 10px;
+    }
+
+    .or p {
+        font-size: 13px;
+    }
+
+    .social-login {
+        width: 86%;
+        gap: 8px;
+    }
+
+    .social-login button {
+        font-size: 13px;
+        padding: 9px 5px;
+    }
+}

@@ -319,7 +319,7 @@ background-color:#C8DEC9;
     transition-duration: 1s;
 }
 .b1{
-    background-image:url(../../image/h4.webp);
+    background-image:url(./image/h4.webp);
     
 
 }
@@ -354,13 +354,13 @@ background-color:#C8DEC9;
     padding: 10px;
 }
 .b2{
-    background-image:url(../../image/h5.avif) ;
+    background-image:url(./image/h5.avif) ;
 }
 .b3{
-background-image:url(../../image/h3.avif) ;
+background-image:url(./image/h3.avif) ;
 }
 .b4{
-background-image:url(../../image/h6.avif) ;
+background-image:url(./image/h6.avif) ;
 }
 /* PERFECT STAY SECTION */
 
